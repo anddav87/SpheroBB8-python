@@ -1,13 +1,19 @@
 # SpheroBB8-python
 
 [Youtube Video](https://youtu.be/1Rkq6M9SdCc)
+Detailed Instructions: http://dustinevans.net/bb8
 
-**Sphero's BB8 droid** 
-*The droid you've been looking for.*
+Required Packages:
+python-pip
+libglib2.0-dev
+bluepy (sudo pip install bluepy)
+bluetooth
+blueman
 
+**
 Now even better with a python API library!
 
-Use "sudo hcitool lescan" to find BB8's MAC address 
+Use the app to find the MAC Address of the BB8
 input it at "`deviceAddress =`" (line 244) in the Sphero class in BB8_driver.py
 
 **
@@ -30,15 +36,7 @@ Currently setup for a Xbox 360 controller.
  - Tapping the Left bumper changes BB8's heading - used to calibration.   
  -  Holding the Right bumper turns on BB8's blue 'tail light' to aid in calibration.
 
-> Adapted the sphero driver library from:
-> https://github.com/mmwise/sphero_ros/tree/groovy-devel/sphero_driver/src/sphero_driver
-> 
-> Used the bluetooth 'stuff' from:
-> https://gist.github.com/ali1234/5e5758d9c591090291d6
 
 **TODO:**
-Tie in the btle handleNotifcations to Sphero response API
-    
-
  - getting sensor info, command responses, etc. back from BB8
 
