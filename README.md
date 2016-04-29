@@ -47,9 +47,14 @@ Currently setup for a Xbox 360 controller.
 sudo ipython
 
 **IPYTHON:**
+
 %load_ext autoreload
+
 %autoreload 2
+
 import BB8_simple
-c = BB8_simple.bb8COntroller()
+
+c = BB8_simple.bb8Controller()
+
 c.turnleft()
 
