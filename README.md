@@ -41,4 +41,15 @@ Currently setup for a Xbox 360 controller.
 
 **TODO:**
  - getting sensor info, command responses, etc. back from BB8
+ - 
+ 
+**BASH:**
+sudo ipython
+
+**IPYTHON:**
+%load_ext autoreload
+%autoreload 2
+import BB8_simple
+c = BB8_simple.bb8COntroller()
+c.turnleft()
 
